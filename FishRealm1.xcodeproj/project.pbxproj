@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7E3AF00C2BA0B19600EF42B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3AF00B2BA0B19600EF42B4 /* AppDelegate.swift */; };
+		7E3AF00E2BA0B19600EF42B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3AF00D2BA0B19600EF42B4 /* SceneDelegate.swift */; };
+		7E3AF0152BA0B19800EF42B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E3AF0142BA0B19800EF42B4 /* Assets.xcassets */; };
+		7E3AF0282BA0B1F500EF42B4 /* HomeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3AF0222BA0B1F500EF42B4 /* HomeViewCell.swift */; };
+		7E3AF0292BA0B1F500EF42B4 /* DateListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3AF0232BA0B1F500EF42B4 /* DateListView.swift */; };
+		7E3AF02A2BA0B1F500EF42B4 /* FishAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3AF0242BA0B1F500EF42B4 /* FishAddView.swift */; };
+		7E3AF02B2BA0B1F500EF42B4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3AF0252BA0B1F500EF42B4 /* HomeView.swift */; };
+		7E3AF02C2BA0B1F500EF42B4 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3AF0272BA0B1F500EF42B4 /* TabBarController.swift */; };
+		7E3AF0312BA0B20000EF42B4 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3AF02E2BA0B20000EF42B4 /* HomeViewModel.swift */; };
+		7E3AF0322BA0B20000EF42B4 /* FishAddViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3AF02F2BA0B20000EF42B4 /* FishAddViewModel.swift */; };
+		7E3AF0332BA0B20000EF42B4 /* DateListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3AF0302BA0B20000EF42B4 /* DateListViewModel.swift */; };
+		7E3AF0362BA0B20600EF42B4 /* FishAddModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3AF0352BA0B20600EF42B4 /* FishAddModel.swift */; };
+		7E3AF0392BA0B20C00EF42B4 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3AF0382BA0B20C00EF42B4 /* Theme.swift */; };
+		7E3AF03D2BA0B21300EF42B4 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3AF03B2BA0B21300EF42B4 /* RealmManager.swift */; };
+		7E3AF03E2BA0B21300EF42B4 /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3AF03C2BA0B21300EF42B4 /* RealmModel.swift */; };
+		7E3AF0412BA0B31000EF42B4 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 7E3AF0402BA0B31000EF42B4 /* Realm */; };
+		7E3AF0432BA0B31000EF42B4 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7E3AF0422BA0B31000EF42B4 /* RealmSwift */; };
+		7E3AF0462BA0B3F400EF42B4 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7E3AF0452BA0B3F400EF42B4 /* SnapKit */; };
+		7E3AF0482BA0B3F400EF42B4 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 7E3AF0472BA0B3F400EF42B4 /* SnapKit-Dynamic */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7E3AF0082BA0B19600EF42B4 /* FishRealm1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FishRealm1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E3AF00B2BA0B19600EF42B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7E3AF00D2BA0B19600EF42B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7E3AF0142BA0B19800EF42B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7E3AF0192BA0B19800EF42B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E3AF0222BA0B1F500EF42B4 /* HomeViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewCell.swift; sourceTree = "<group>"; };
+		7E3AF0232BA0B1F500EF42B4 /* DateListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateListView.swift; sourceTree = "<group>"; };
+		7E3AF0242BA0B1F500EF42B4 /* FishAddView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FishAddView.swift; sourceTree = "<group>"; };
+		7E3AF0252BA0B1F500EF42B4 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		7E3AF0272BA0B1F500EF42B4 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		7E3AF02E2BA0B20000EF42B4 /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		7E3AF02F2BA0B20000EF42B4 /* FishAddViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FishAddViewModel.swift; sourceTree = "<group>"; };
+		7E3AF0302BA0B20000EF42B4 /* DateListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateListViewModel.swift; sourceTree = "<group>"; };
+		7E3AF0352BA0B20600EF42B4 /* FishAddModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FishAddModel.swift; sourceTree = "<group>"; };
+		7E3AF0382BA0B20C00EF42B4 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		7E3AF03B2BA0B21300EF42B4 /* RealmManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		7E3AF03C2BA0B21300EF42B4 /* RealmModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7E3AF0052BA0B19600EF42B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E3AF0462BA0B3F400EF42B4 /* SnapKit in Frameworks */,
+				7E3AF0432BA0B31000EF42B4 /* RealmSwift in Frameworks */,
+				7E3AF0412BA0B31000EF42B4 /* Realm in Frameworks */,
+				7E3AF0482BA0B3F400EF42B4 /* SnapKit-Dynamic in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7E3AEFFF2BA0B19600EF42B4 = {
+			isa = PBXGroup;
+			children = (
+				7E3AF00A2BA0B19600EF42B4 /* FishRealm1 */,
+				7E3AF0092BA0B19600EF42B4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7E3AF0092BA0B19600EF42B4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7E3AF0082BA0B19600EF42B4 /* FishRealm1.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7E3AF00A2BA0B19600EF42B4 /* FishRealm1 */ = {
+			isa = PBXGroup;
+			children = (
+				7E3AF03A2BA0B21300EF42B4 /* RealmManager */,
+				7E3AF0372BA0B20C00EF42B4 /* Theme */,
+				7E3AF0342BA0B20600EF42B4 /* Model */,
+				7E3AF02D2BA0B20000EF42B4 /* ViewModel */,
+				7E3AF0202BA0B1F500EF42B4 /* View */,
+				7E3AF01F2BA0B1DE00EF42B4 /* Core */,
+				7E3AF0142BA0B19800EF42B4 /* Assets.xcassets */,
+				7E3AF0192BA0B19800EF42B4 /* Info.plist */,
+			);
+			path = FishRealm1;
+			sourceTree = "<group>";
+		};
+		7E3AF01F2BA0B1DE00EF42B4 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				7E3AF00B2BA0B19600EF42B4 /* AppDelegate.swift */,
+				7E3AF00D2BA0B19600EF42B4 /* SceneDelegate.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		7E3AF0202BA0B1F500EF42B4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7E3AF0262BA0B1F500EF42B4 /* TabBar */,
+				7E3AF0212BA0B1F500EF42B4 /* Cells */,
+				7E3AF0232BA0B1F500EF42B4 /* DateListView.swift */,
+				7E3AF0242BA0B1F500EF42B4 /* FishAddView.swift */,
+				7E3AF0252BA0B1F500EF42B4 /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7E3AF0212BA0B1F500EF42B4 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				7E3AF0222BA0B1F500EF42B4 /* HomeViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		7E3AF0262BA0B1F500EF42B4 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				7E3AF0272BA0B1F500EF42B4 /* TabBarController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		7E3AF02D2BA0B20000EF42B4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7E3AF02E2BA0B20000EF42B4 /* HomeViewModel.swift */,
+				7E3AF02F2BA0B20000EF42B4 /* FishAddViewModel.swift */,
+				7E3AF0302BA0B20000EF42B4 /* DateListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7E3AF0342BA0B20600EF42B4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7E3AF0352BA0B20600EF42B4 /* FishAddModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7E3AF0372BA0B20C00EF42B4 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				7E3AF0382BA0B20C00EF42B4 /* Theme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		7E3AF03A2BA0B21300EF42B4 /* RealmManager */ = {
+			isa = PBXGroup;
+			children = (
+				7E3AF03B2BA0B21300EF42B4 /* RealmManager.swift */,
+				7E3AF03C2BA0B21300EF42B4 /* RealmModel.swift */,
+			);
+			path = RealmManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7E3AF0072BA0B19600EF42B4 /* FishRealm1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E3AF01C2BA0B19800EF42B4 /* Build configuration list for PBXNativeTarget "FishRealm1" */;
+			buildPhases = (
+				7E3AF0042BA0B19600EF42B4 /* Sources */,
+				7E3AF0052BA0B19600EF42B4 /* Frameworks */,
+				7E3AF0062BA0B19600EF42B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FishRealm1;
+			packageProductDependencies = (
+				7E3AF0402BA0B31000EF42B4 /* Realm */,
+				7E3AF0422BA0B31000EF42B4 /* RealmSwift */,
+				7E3AF0452BA0B3F400EF42B4 /* SnapKit */,
+				7E3AF0472BA0B3F400EF42B4 /* SnapKit-Dynamic */,
+			);
+			productName = FishRealm1;
+			productReference = 7E3AF0082BA0B19600EF42B4 /* FishRealm1.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7E3AF0002BA0B19600EF42B4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					7E3AF0072BA0B19600EF42B4 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 7E3AF0032BA0B19600EF42B4 /* Build configuration list for PBXProject "FishRealm1" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7E3AEFFF2BA0B19600EF42B4;
+			packageReferences = (
+				7E3AF03F2BA0B31000EF42B4 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				7E3AF0442BA0B34800EF42B4 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
+			productRefGroup = 7E3AF0092BA0B19600EF42B4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7E3AF0072BA0B19600EF42B4 /* FishRealm1 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7E3AF0062BA0B19600EF42B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E3AF0152BA0B19800EF42B4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7E3AF0042BA0B19600EF42B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E3AF03D2BA0B21300EF42B4 /* RealmManager.swift in Sources */,
+				7E3AF03E2BA0B21300EF42B4 /* RealmModel.swift in Sources */,
+				7E3AF0332BA0B20000EF42B4 /* DateListViewModel.swift in Sources */,
+				7E3AF02C2BA0B1F500EF42B4 /* TabBarController.swift in Sources */,
+				7E3AF02B2BA0B1F500EF42B4 /* HomeView.swift in Sources */,
+				7E3AF0362BA0B20600EF42B4 /* FishAddModel.swift in Sources */,
+				7E3AF0282BA0B1F500EF42B4 /* HomeViewCell.swift in Sources */,
+				7E3AF0312BA0B20000EF42B4 /* HomeViewModel.swift in Sources */,
+				7E3AF02A2BA0B1F500EF42B4 /* FishAddView.swift in Sources */,
+				7E3AF0322BA0B20000EF42B4 /* FishAddViewModel.swift in Sources */,
+				7E3AF0292BA0B1F500EF42B4 /* DateListView.swift in Sources */,
+				7E3AF0392BA0B20C00EF42B4 /* Theme.swift in Sources */,
+				7E3AF00C2BA0B19600EF42B4 /* AppDelegate.swift in Sources */,
+				7E3AF00E2BA0B19600EF42B4 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7E3AF01A2BA0B19800EF42B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7E3AF01B2BA0B19800EF42B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7E3AF01D2BA0B19800EF42B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L2PCT4H5A2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FishRealm1/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hakanerdogmus.FishRealm1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7E3AF01E2BA0B19800EF42B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L2PCT4H5A2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FishRealm1/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hakanerdogmus.FishRealm1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7E3AF0032BA0B19600EF42B4 /* Build configuration list for PBXProject "FishRealm1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E3AF01A2BA0B19800EF42B4 /* Debug */,
+				7E3AF01B2BA0B19800EF42B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E3AF01C2BA0B19800EF42B4 /* Build configuration list for PBXNativeTarget "FishRealm1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E3AF01D2BA0B19800EF42B4 /* Debug */,
+				7E3AF01E2BA0B19800EF42B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7E3AF03F2BA0B31000EF42B4 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		7E3AF0442BA0B34800EF42B4 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7E3AF0402BA0B31000EF42B4 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E3AF03F2BA0B31000EF42B4 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		7E3AF0422BA0B31000EF42B4 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E3AF03F2BA0B31000EF42B4 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		7E3AF0452BA0B3F400EF42B4 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E3AF0442BA0B34800EF42B4 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		7E3AF0472BA0B3F400EF42B4 /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E3AF0442BA0B34800EF42B4 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 7E3AF0002BA0B19600EF42B4 /* Project object */;
+}
