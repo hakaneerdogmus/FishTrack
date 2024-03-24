@@ -31,6 +31,8 @@ class HomeView: UIViewController {
         viewModel.viewDidLoad()
     }
     
+    
+    
     func gradientColor(startColor: UIColor, endColor: UIColor) {
         let gradientLayer = Theme.gradientLayerColor(startColor: startColor, endColor: endColor)
         gradientLayer.frame = view.bounds
@@ -41,12 +43,12 @@ class HomeView: UIViewController {
         let layout = UICollectionViewFlowLayout()
         //CollectionView in dikey olarak scroll edilebilir olduğunu belirttik
         layout.scrollDirection = .vertical
-        //Saüdan soldan üsttten alltan bırakılan boşluk ayarı
+        //Sağdan soldan üsttten alltan bırakılan boşluk ayarı
         layout.sectionInset = UIEdgeInsets(top: 30, left: 10, bottom: 0, right: 10)
         //Herbir hücre için ayar geniişilk ayarı ile yan yana 2 tane cel görünmesini ayarladık
-        layout.itemSize = CGSize(width: UIScreen.main.bounds.width  , height: UIScreen.main.bounds.width * 0.5)
+        layout.itemSize = CGSize(width: UIScreen.main.bounds.width  , height: UIScreen.main.bounds.width * 0.2)
         //Aradaki boşluklar Yatay yani alt alta olan cellerin mesafe boşlukları
-        layout.minimumLineSpacing = 25
+        layout.minimumLineSpacing = 10
         return layout
     }
     //CollectionView
@@ -60,8 +62,8 @@ class HomeView: UIViewController {
         collectionView.register(HomeViewCell.self, forCellWithReuseIdentifier: HomeViewCell.reuseID)
         collectionView.snp.makeConstraints { make in
             make.top.equalToSuperview()
-            make.left.equalToSuperview()
-            make.right.equalToSuperview()
+            make.leading.equalToSuperview().offset(5)
+            make.trailing.equalToSuperview().offset(-5)
             make.bottom.equalToSuperview()
         }
     }
@@ -81,5 +83,11 @@ extension HomeView: UICollectionViewDataSource, UICollectionViewDelegate {
         return cell
     }
     
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print(indexPath.row)
+        print("Seçilen data: \(viewModel.infoArray[indexPath.row])")
+       // RealmManager.shared.deleteData(realmModel: viewModel.infoArray[indexPath.row])
+        
+       
+    }
 }

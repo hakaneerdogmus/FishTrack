@@ -29,8 +29,9 @@ class DateListView: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        tableView.reloadData()
-        viewModel.getDateArray()
+//        tableView.reloadData()
+//        viewModel.getDateArray()
+        viewModel.viewWillAppear()
     }
     //Back graound Color
     func gradientColor(startColor: UIColor, endColor: UIColor) {

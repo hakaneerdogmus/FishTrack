@@ -26,11 +26,11 @@ class DateListViewModel {
        // view?.view.backgroundColor = .gray
         view?.tabBarController?.navigationController?.navigationBar.isTranslucent = false
         view?.tabBarController?.navigationController?.navigationBar.isHidden = true
-      //  getDateArray()
+        getDateArray()
     }
     func viewWillAppear() {
         view?.tableView.reloadData()
-        getDateArray()
+       // getDateArray()
     }
     //Seçilen tarih içindeki bilgileri çektik
     func selectedDate(selectedDate: String) -> [RealmModel] {

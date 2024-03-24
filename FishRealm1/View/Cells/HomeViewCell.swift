@@ -12,7 +12,7 @@ class HomeViewCell: UICollectionViewCell {
     static let reuseID = "HomeViewCell"
     
     var imageView: UIImageView!
-    var label: UITextView!
+    var label: UILabel!
 
         override init(frame: CGRect) {
             super.init(frame: frame)
@@ -38,34 +38,46 @@ class HomeViewCell: UICollectionViewCell {
     
     private func configureImageView() {
         imageView = UIImageView(frame: .zero)
-        imageView.contentMode = .scaleAspectFill
+        imageView.contentMode = .scaleToFill
         imageView.clipsToBounds = true
-        imageView.backgroundColor = .white
+        imageView.backgroundColor = .black
         contentView.addSubview(imageView)
         
-        // SnapKit ile kontraint'leri belirle
         imageView.snp.makeConstraints { make in
             make.top.equalToSuperview()
             make.leading.equalToSuperview()
-            make.trailing.equalToSuperview().multipliedBy(0.5)
+            make.trailing.equalToSuperview().multipliedBy(0.3)
             make.bottom.equalToSuperview()
         }
 
     }
     private func configurelabel() {
-        label = UITextView(frame: .zero)
+        
+        let scrollView = UIScrollView(frame: .zero)
+       // scrollView.backgroundColor = .red
+        contentView.addSubview(scrollView)
+        
+        scrollView.snp.makeConstraints { make in
+            make.top.equalToSuperview()
+            make.leading.equalTo(imageView.snp.trailing).offset(10)
+            make.trailing.equalToSuperview().offset(-10)
+            make.bottom.equalToSuperview()
+        }
+        
+        label = UILabel(frame: .zero)
         label.contentMode = .scaleAspectFill
         label.clipsToBounds = true
-        label.backgroundColor = .black
-       // label.text = "asdasdasdasdaasdasdasdasdasdadasdasdaasdasdasdasdaasdasdasdasdasdadasdasdaasdasdasdasdaasdasdasdasdasdadasdasdaasdasdasdasdaasdasdasdasdasdadasdasdaasdasdasdasdaasdasdasdasdasdadasdasdaasdasdasdasdaasdasdasdasdasdadasdasdaasdasdasdasdaasdasdasdasdasdadasdasdaasdasdasdasdaasdasdasdasdasdadasdasdaasdasdasdasdaasdasdasdasdasdadasdasdaasdasdasdasdaasdasdasdasdasdadasdasdaasdasdasdasdaasdasdasdasdasdadasdasdaasdasdasdasdaasdasdasdasdasdadasdasdaasdasdasdasdaasdasdasdasdasdadasdasda"
-        contentView.addSubview(label)
+        label.numberOfLines = 0
+        label.font = UIFont.systemFont(ofSize: 18)
+      //  label.backgroundColor = .black
+        scrollView.addSubview(label)
         
-        // SnapKit ile kontraint'leri belirle
         label.snp.makeConstraints { make in
             make.top.equalToSuperview()
-            make.leading.equalTo(imageView.snp.trailing)
+            make.leading.equalToSuperview()
             make.trailing.equalToSuperview()
             make.bottom.equalToSuperview()
+            make.width.equalToSuperview().offset(-10)
         }
     }
     
